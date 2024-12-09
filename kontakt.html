@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jan Novák</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container header grid--six">
+            <div class="logo"><img src="images/logo.svg" alt="logo Jan Novák" title="Úvod"></div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Dotace</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Služby</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">O&nbsp;mně</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!--  TADY KONČÍ HLAVIČKA  -->
+        </div>
+    </header> <!-- konec header -->
+
+
+    <div class="container"> <!-- upravuje šířku webu na 1100px -->
+
+        <section>
+            <h1 class="text-center">Kontakt</h1>
+
+<div class="contact grid--six">
+   
+
+    <div class="contact__title">
+       <h2 class="contact__name">Jan<br> Novák</h2>
+    </div>
+
+    <div class="contact__item">
+        <p>
+            <strong>ahoj@dotace-novak.cz </strong><br>
+            <strong>722 123 456</strong></p>
+        <p>IČ: 123456789<br>
+            <span class="p--small">Zapsaný na živnostenském úřade v Brně </span>
+        </p>
+    </div>
+
+    <div class="contact__office">
+        <p><strong>Kancelář:</strong><br>
+           Přemysla Oráče 235/78 <br>
+            Praha 4<br>
+        </p>
+        <p>PO-ST  10:00 až 18:00</p>
+    </div>
+    <div class="contact__photo">
+        <img class="contact__img" src="images/jan-novak.jpeg" alt="Portrét Jana Nováka">
+    </div>
+
+
+</div>
+
+
+
+<!--
+            <div class="contact grid--six">
+                <div class="contact__item">
+                    <img class="contact__photo" src="images/jan-novak.jpeg" alt="Portrét Jana Nováka">
+                </div>
+
+                <div class="contact__item">
+                    <p><strong>Jan Novák </strong><br>
+                    ahoj@dotace-novak.cz <br>
+                    722 123 456</p>
+                </div>
+
+                <div class="contact__item">
+                    <p>IČ: 123456789<br>
+                    <span class="p--small">Zapsaný na živnostenském úřade v Brně </span></p>
+                
+                </div>
+
+
+            </div>
+-->
+        </section>
+
+
+
+        <section class="form">
+            <div class="form__wrap">
+            <h2 class="form__title">Kontaktní formulář</h2>
+            <p>Napište mi, s čím vám můžu pomoci</p>
+
+
+            <form method="get" action="">
+                <div class="form__field">
+                    <label>Jméno</label> <input type="text" name="name" id="name">
+                </div>
+                <div class="form__field">
+                    <label>Váš e-mail* </label><input type="email" value="@" name="email" id="email" required>
+                </div>
+                <div class="form__field">
+                    <label>Telefon</label> <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="form__field">
+                    <label class="form__field--check-title">Typ dotace </label>
+                
+                <div class="form__check">
+                    <div class="form__field--checkbox">
+                        <input type="checkbox" name="fotovoltaika" id="fotovoltaika"><label> Fotovoltaická
+                            elektrárna</label>
+                    </div>
+                    <div class="form__field--checkbox">
+                        <input type="checkbox" name="okna" id="okna"> <label>Výměna oken</label>
+                    </div>
+                    <div class="form__field--checkbox">
+                        <input type="checkbox" name="tepelne-cerpadlo" id="tepelne-cerpadlo"> <label>Tepelné
+                            čerpadlo</label>
+                    </div>
+                    <div class="form__field--checkbox">
+
+                        <input type="checkbox" name="zatepleni" id="zatepleni"><label> Zateplení RD</label>
+                    </div>
+                    <div class="form__field--checkbox">
+                        <input type="checkbox" name="rekuperace" id="rekuperace"><label> Rekuperace</label>
+                    </div>
+                    <div class="form__field--checkbox">
+                        <input type="checkbox" name="dobijeni-el" id="dobijeni-el"> <label>Dobíjecí stanice
+                            el.</label>
+                    </div>
+                </div>
+                </div>
+                <div class="form__field">
+                    <label>Poznámka</label> <textarea placeholder="Napište mi více podrobností"></textarea>
+                </div>
+                <button class="btn btn--big" type="submit">Odeslat</button>
+            </form>
+
+
+            </div>
+        </section>
+
+
+
+        <!--  TADY ZAČÍNÁ FOOTER -->
+
+        <footer class="grid--two">
+            <p>Jan Novák - 2024 Czechitas projekt</p>
+            <p>Autor: Kač Koukalová</p>
+        </footer>
+    </div>
+</body>
+
+</html>
