@@ -498,59 +498,58 @@ input[type=checkbox] {
   height: 22px;
 }
 
+.grid--four {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 500px) {
+  .grid--four {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 850px) {
+  .grid--four {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .contact {
   gap: 15px 25px;
-  grid-template-areas: "photo photo name name name name" " contact contact contact contact contact contact" " office office office office office office";
+  grid-template-areas: "name" "contact" "office";
 }
 @media screen and (min-width: 500px) {
   .contact {
-    grid-template-areas: "photo photo name name name name" " contact contact contact office office office";
+    grid-template-areas: "name name" "contact office";
   }
 }
 @media screen and (min-width: 850px) {
   .contact {
-    grid-template-areas: " photo name contact contact office office";
-    align-self: center;
+    grid-template-areas: "name contact office";
   }
 }
 .contact__title {
   grid-area: name;
+  display: flex;
 }
 .contact__name {
-  font-size: 3.2rem;
+  font-size: 3rem;
   line-height: 1.2;
   font-weight: 700;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 .contact__item {
   grid-area: contact;
 }
-@media screen and (min-width: 850px) {
-  .contact__item {
-    justify-self: end;
-  }
-}
 .contact__office {
   grid-area: office;
 }
-@media screen and (min-width: 850px) {
-  .contact__office {
-    justify-self: end;
-  }
-}
 .contact__photo {
-  grid-area: photo;
   padding-top: 15px;
-}
-@media screen and (min-width: 500px) {
-  .contact__photo {
-    padding-top: 0;
-  }
+  padding-right: 15px;
 }
 .contact__img {
-  grid-area: photo;
   width: 100%;
-  max-width: 180px;
+  max-width: 120px;
   margin: 0 auto;
   border-radius: 50%;
 }

@@ -57,6 +57,7 @@ a {
 }
 
 
+
 header {
 
     @media screen and (min-width: 550px) {
@@ -527,79 +528,71 @@ form {
 input[type=checkbox] {
     width: 22px;
     height: 22px;
-
-
 }
 
+.grid--four {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: 500px) {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media screen and (min-width: 850px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
 
 .contact {
     gap: 15px 25px;
     grid-template-areas:
-    "photo photo name name name name"
-    " contact contact contact contact contact contact"
-    " office office office office office office"
+    "name"
+    "contact"
+    "office"
     ;
 
 
     @media screen and (min-width: 500px) {
             grid-template-areas:
-            "photo photo name name name name"
-                " contact contact contact office office office";
+            "name name"
+            "contact office";
             
         }
 
     @media screen and (min-width: 850px) {
             grid-template-areas:
-                " photo name contact contact office office";
-            align-self: center;
+                "name contact office";
         }
 
-    &__title {grid-area: name;}    
+    &__title {
+            grid-area: name;
+            display: flex;
+        }
 
     &__name {
-        font-size: 3.2rem;
+        font-size: 3rem;
         line-height: 1.2;
         font-weight: 700;
-        margin: 10px 0;
+        margin: 15px 0;
     }
 
     &__item {
         grid-area: contact;
-    
-        @media screen and (min-width: 850px) {
-            justify-self: end;
-            
-    }
     }
 
         &__office {grid-area:office;
-
-        @media screen and (min-width: 850px) {
-                justify-self: end;
-        
-            }
     
     }
 
           &__photo {
-              grid-area: photo;
               padding-top: 15px;
-
-                @media screen and (min-width: 500px) {
-                    padding-top:0;
-                }
-                       
-                
-                    @media screen and (min-width: 850px) {
-                    }
-
-
+              padding-right: 15px;
           }
     
           &__img {
-              grid-area: photo;
               width: 100%;
-              max-width: 180px;
+              max-width: 120px;
               margin: 0 auto;
               border-radius: 50%;
           }
@@ -649,15 +642,15 @@ input[type=checkbox] {
 
     &__images {grid-column: span 6;
 
-    @media screen and (min-width: 460px) {
-        grid-column: span 2;
-        display: flex;
-    }
+        @media screen and (min-width: 460px) {
+            grid-column: span 2;
+            display: flex;
+        }
 
-    @media screen and (min-width: 700px) {
-        grid-column: span 2;
-        display: block;
-    }
+        @media screen and (min-width: 700px) {
+            grid-column: span 2;
+            display: block;
+        }
     
     }
 
