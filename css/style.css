@@ -126,8 +126,13 @@ a:focus, a:hover {
   border-color: #2ec4b6;
   background-color: white;
 }
-.menu__link:active {
+.menu__link--active:hover, .menu__link:active {
   background-color: #cbf3f0;
+}
+.menu__link--active {
+  border-radius: 7px;
+  border-color: #2ec4b6;
+  background-color: white;
 }
 
 .hero {
@@ -354,6 +359,7 @@ h1 + .list {
 .price-list__table {
   margin: 40px auto 20px;
   border: 2px solid #2ec4b6;
+  /* border-collapse: collapse; */
   border-radius: 15px;
 }
 .price-list__table td {
@@ -462,7 +468,7 @@ form {
 .form__field input {
   width: 100%;
   height: 2rem;
-  border: 2px solid #ff9f1c;
+  border: 2px solid #fac785;
   border-radius: 5px;
 }
 @media screen and (min-width: 700px) {
@@ -474,8 +480,7 @@ form {
 .form__field textarea {
   width: 100%;
   height: 60px;
-  border: 2px solid #ff9f1c;
-  border-radius: 5px;
+  border: 2px solid #fac785;
 }
 .form__check {
   display: flex;
@@ -502,17 +507,17 @@ input[type=checkbox] {
   height: 22px;
 }
 
-.grid--four {
+.grid--three {
   display: grid;
   grid-template-columns: 1fr;
 }
 @media screen and (min-width: 500px) {
-  .grid--four {
+  .grid--three {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (min-width: 850px) {
-  .grid--four {
+  .grid--three {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -558,28 +563,6 @@ input[type=checkbox] {
   border-radius: 50%;
 }
 
-/*  
-  &__item:first-child {
-      grid-column: span 2;
-      grid-row: span 2;
-
-      @media screen and (min-width: 700px) {
-              grid-column: 2/4;
-              align-self: center;
-              justify-self: end;
-              padding-right: 20px;
-          }
-
-  }
-
-  &__item {
-          grid-column: span 4;
-
-          @media screen and (min-width: 700px) {
-              grid-column: 4/6;
-              align-self: center;
-              }
-      } */
 .blog {
   gap: 22px;
   margin-bottom: 15px;
@@ -600,7 +583,7 @@ input[type=checkbox] {
 }
 @media screen and (min-width: 460px) {
   .blog__images {
-    grid-column: span 2;
+    grid-column: span 3;
     display: flex;
   }
 }

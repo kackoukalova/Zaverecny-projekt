@@ -1,0 +1,16 @@
+{
+  "name": "koderka-projekt",
+    "version": "1.0.0",
+  "description": "Závěrečný úkol",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Kač Koukalová",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jan Novák</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-</head>
-
-<body>
-
-   
-        <header>
-            <div class="container header grid--six">
-                <div class="logo"><a href="/" class="logo__link" title="Úvod"><img src="images/logo.svg" alt="logo Jan Novák"></a></div>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Dotace</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Služby</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">O&nbsp;mně</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-
-            <!--  TADY KONČÍ HLAVIČKA  -->
+---
+title: Jan Novák 
+layout: sablona.njk
+---
            
             <div class="hero grid--six"> 
                 <div class="hero__text">
@@ -57,45 +22,45 @@
         <section>
             <h2 class="text-center">Pomůžu vám vyřídit dotace na</h2> <!-- Druhy dotací -->
 
-            <div class="tile grid--six"> 
+            <div class="tile grid--six">
                 <div class="tile__item ">
-                    <a href="#" class="tile__link">
-                        <div class="tile__item-icon"><img src="images/icon-sun-energy.svg"></div>
+                    <a href="/dotace/fotovoltaika/" class="tile__link">
+                        <div class="tile__item-icon"><img src="/images/icon-sun-energy.svg"></div>
                         <h3 class="tile__item--title">Fotovoltaická elektrárna</h3>
                         <button class="btn btn--primary btn--big">více informací</button>
                     </a>
                 </div>
                 <div class="tile__item ">
-                    <a href="#" class="tile__link">
-                        <div class="tile__item-icon"><img src="images/icon-heat-pump.svg"></div>
+                    <a href="/dotace/tepelne-cerpadlo/" class="tile__link">
+                        <div class="tile__item-icon"><img src="/images/icon-heat-pump.svg"></div>
                         <h3 class="tile__item--title">Tepelné čerpadlo</h3>
                         <button class="btn btn--primary btn--big">více informací</button>
                     </a>
                 </div>
                 <div class="tile__item ">
-                    <a href="#" class="tile__link">
-                        <div class="tile__item-icon"><img src="images/icon-house.svg"></div>
+                    <a href="/dotace/zatepleni-rd/" class="tile__link">
+                        <div class="tile__item-icon"><img src="/images/icon-house.svg"></div>
                         <h3 class="tile__item--title">Zateplení rodinného domu</h3>
                         <button class="btn btn--primary btn--big">více informací</button>
                     </a>
                 </div>
                 <div class="tile__item ">
-                    <a href="#" class="tile__link">
-                        <div class="tile__item-icon"><img src="images/icon-window.svg"></div>
+                    <a href="/dotace/vymena-oken/" class="tile__link">
+                        <div class="tile__item-icon"><img src="/images/icon-window.svg"></div>
                         <h3 class="tile__item--title">Výměna oken</h3>
                         <button class="btn btn--primary btn--big">více informací</button>
                     </a>
                 </div>
                 <div class="tile__item ">
-                    <a href="#" class="tile__link">
-                        <div class="tile__item-icon"><img src="images/icon-recovery.svg"></div>
+                    <a href="/dotace/rekuperace/" class="tile__link">
+                        <div class="tile__item-icon"><img src="/images/icon-recovery.svg"></div>
                         <h3 class="tile__item--title">Rekuperace</h3>
                         <button class="btn btn--primary btn--big">více informací</button>
                     </a>
                 </div>
                 <div class="tile__item">
-                    <a href="#" class="tile__link">
-                        <div class="tile__item-icon"><img src="images/icon-car-energy.svg"> </div>
+                    <a href="/dotace/dobijeci-stanice/" class="tile__link">
+                        <div class="tile__item-icon"><img src="/images/icon-car-energy.svg"> </div>
                         <h3 class="tile__item--title">Dobíjecí stanice elektromobilu</h3>
                         <button class="btn btn--primary btn--big">více informací</button>
                     </a>
@@ -115,17 +80,5 @@
 
         </section>
 
-        <div class="contact-banner">
-            <p class="p--big">Získejte dotace pro váš dům bez starostí</p>
-            <a href="#" class="btn btn--drab">Kontaktujte mě</a>
-        </div>
 
-        <!--  TADY ZAČÍNÁ FOOTER -->
-
-        <footer class="grid--two"> 
-            <p>Jan Novák - 2024 Czechitas projekt</p>
-            <p>Autor: Kač Koukalová</p>
-        </footer>
-    </div>
-</body>
-</html>
+      

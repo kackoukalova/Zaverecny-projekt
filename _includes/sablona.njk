@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+   
+        <header>
+            <div class="container header grid--six">
+                <div class="logo"><a href="/" class="logo__link" title="Úvod"><img src="/images/logo.svg" alt="logo Jan Novák"></a></div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="/dotace/" class="menu__link 
+                            {{ 'menu__link--active' if page.fileSlug === 'dotace'}}
+                            {{ 'menu__link--active' if page.fileSlug === 'rekuperace' }}
+                            {{ 'menu__link--active' if page.fileSlug === 'dobijeci-stanice' }}
+                            {{ 'menu__link--active' if page.fileSlug === 'fotovoltaika' }}
+                            {{ 'menu__link--active' if page.fileSlug === 'tepelne-cerpadlo' }}
+                            {{ 'menu__link--active' if page.fileSlug === 'vymena-oken' }}
+                            {{ 'menu__link--active' if page.fileSlug === 'zatepleni-rd' }}
+                            ">Dotace</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/sluzby/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'sluzby' }}">Služby</a>
+                        </li>
+                        <li class="menu__item ">
+                            <a href="/omne/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'omne' }}">O&nbsp;mně</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="/kontakt/" class="menu__link {{ 'menu__link--active' if page.fileSlug === 'kontakt' }}">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            <!--  TADY KONČÍ HLAVIČKA  -->
+
+{{ content | safe }}
+
+{% if page.fileSlug !== 'kontakt' %}
+    <div class="contact-banner">
+            <p class="p--big">Získejte dotace pro váš dům bez starostí</p>
+            <a href="/kontakt/" class="btn btn--drab">Kontaktujte mě</a>
+     </div>
+{% endif %}
+
+        <!--  TADY ZAČÍNÁ FOOTER -->
+
+        <footer> 
+            <p>Jan Novák - 2024 Czechitas projekt</p>
+            <p>Autor: Kač Koukalová</p>
+        </footer>
+    </div>
+</body>
+</html>
